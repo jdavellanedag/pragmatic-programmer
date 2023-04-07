@@ -15,6 +15,9 @@ enum Command {
 }
 
 impl Command {
+    /**
+     * I´m fully aware that this is odd and I´m going hell for this, but I´m just learning rust :c
+     */
     fn from_string(s: &str) -> Option<Command> {
         let parts: Vec<&str> = s.split_whitespace().collect();
         match parts.get(0)? {
